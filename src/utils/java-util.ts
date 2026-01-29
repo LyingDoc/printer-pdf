@@ -24,7 +24,7 @@ const Parameter = `${fixPath}`;
  * 解决 TS 顶层 await 限制
  */
 async function initJava(): Promise<any> {
-    let instance: any = null;
+    let instance: any;
     // 手动包装 Promise 以适配 async/await
     let homePath = await new Promise<string>((resolve, reject) => {
         findJavaHome({allowJre: true}, (err, home) => {

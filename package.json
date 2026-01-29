@@ -34,9 +34,9 @@
     "webpack-node-externals": "^3.0.0"
   },
   "keywords": [
+    "printer-pdf",
     "pdf",
     "printer",
-    "pdf-printer",
     "node.js",
     "electron"
   ],
