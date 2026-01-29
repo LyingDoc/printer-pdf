@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD033 -->
 
-# pdf-printer
+# printer-pdf
 
-`pdf-printer` 是一个 Node.js & electron 打印库，该库集成 [
+`printer-pdf` 是一个 Node.js & electron 打印库，该库集成 [
 `node-java-caller`](https://github.com/nvuillam/node-java-caller) 运行插件， 执行封装项目[
 `printer-java`](https://github.com/LyingDoc/printer) 中的 jar 包实现的项目。
 
@@ -32,9 +32,9 @@
 ## Installation
 
 ```shell
-npm install pdf-printer --save   #npm安装依赖
+npm install printer-pdf --save   #npm安装依赖
 
-yarn add pdf-printer             #yarn安装依赖
+yarn add printer-pdf            #yarn安装依赖
 ```
 
 ## Usage [Example](https://github.com/LyingDoc/pdf-printer/blob/master/test/index.ts)
