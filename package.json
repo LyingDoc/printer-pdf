@@ -1,0 +1,47 @@
+{
+  "name": "printer-pdf",
+  "version": "5.2.0",
+  "description": "A simple and powerful printing library for node and elctron environments.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LyingDoc/pdf-printer.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "esno test/index.ts",
+    "lint": "prettier --write \"**/*.{js,ts,json,md,yml}\"",
+    "build": "webpack --config webpack.config.js",
+    "lint-build": "npm run lint && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "@types/webpack-node-externals": "^3",
+    "clean-webpack-plugin": "4.0.0",
+    "copy-webpack-plugin": "^13.0.1",
+    "electron-util": "^1.0.0",
+    "esno": "^4.8.0",
+    "prettier": "3.8.1",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "keywords": [
+    "pdf",
+    "printer",
+    "pdf-printer",
+    "node.js",
+    "electron"
+  ],
+  "dependencies": {
+    "find-java-home": "^2.0.0",
+    "java-caller": "^4.3.2"
+  }
+}
