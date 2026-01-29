@@ -10,7 +10,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/LyingDoc/printer-pdf?label=Star&maxAge=2592000)](https://github.com/LyingDoc/pdf-printer/stargazers)
 [![Downloads/week](https://img.shields.io/npm/dw/printer-pdf.svg)](https://www.npmjs.com/package/printer-pdf)
 [![Downloads/total](https://img.shields.io/npm/dt/printer-pdf.svg)](https://npmjs.org/package/printer-pdf)<!-- gh-dependents-info-used-by-start -->
-[![GitHub contributors](https://img.shields.io/github/contributors/LyingDoc/printer-pdf.svg)](https://gitHub.com/LyingDoc/pdf-printer/graphs/contributors/)
+[![GitHub contributors](https://img.shields.io/github/contributors/LyingDoc/printer-pdf.svg)](https://gitHub.com/LyingDoc/printer-pdf/graphs/contributors/)
 [![License](https://img.shields.io/npm/l/printer-pdf.svg)](https://github.com/LyingDoc/printer-pdf/blob/master/LICENSE)
 
 轻量级跨平台 TypeScript 模块，可**轻松地从 Node.js 代码调用获取打印机相关信息**。
