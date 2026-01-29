@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD033 -->
+<!-- Markdown lint-disable MD033 -->
 
 # printer-pdf
 
