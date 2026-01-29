@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LyingDoc/pdf-printer.git"
+    "url": "git+https://github.com/LyingDoc/printer-pdf.git"
   },
   "publishConfig": {
     "access": "public",
