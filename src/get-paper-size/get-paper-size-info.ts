@@ -1,4 +1,4 @@
-import {paperSizeInfoOptions, PaperSizesInfoType, PrinterActions,} from "../types";
+import {paperSizeInfoOptions, PaperSizesInfoType, PrinterActions} from "../types";
 import {run} from "../utils/java-util";
 
 

@@ -20,8 +20,8 @@
     "lint-build": "npm run lint && npm run build"
   },
   "devDependencies": {
-    "@types/node": "^25.0.10",
-    "@types/webpack-node-externals": "^3",
+    "@types/node": "^25.1.0",
+    "@types/webpack-node-externals": "^3.0.4",
     "clean-webpack-plugin": "4.0.0",
     "copy-webpack-plugin": "^13.0.1",
     "electron-util": "^1.0.0",

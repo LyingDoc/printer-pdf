@@ -24,7 +24,7 @@ const Parameter = `${fixPath}`;
  * 解决 TS 顶层 await 限制
  */
 async function initJava(): Promise<any> {
-    let instance: any;
+    let instance: any = null;
     // 手动包装 Promise 以适配 async/await
     let homePath = await new Promise<string>((resolve, reject) => {
         findJavaHome({allowJre: true}, (err, home) => {
@@ -50,16 +50,15 @@ async function initJava(): Promise<any> {
 }
 
 
-export const run = async (printer: Options): Promise<string | " "> => {
+export const run = async (printer: Options): Promise<string | "{ }"> => {
     const args: string[] = [];
     args.push(printer.arg);
     if (printer.printerName) {
         args.push(printer.printerName);
     }
     const java = await initJava();
-
     const {status, stdout, stderr} = await java.run(args);
-    return stdout ? stdout.trim() : " ";
+    return stdout ? stdout.trim() : "{}";
 };
 
 export const printRun = async (

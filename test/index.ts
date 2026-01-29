@@ -1,4 +1,4 @@
-import {getDefaultPrinter, getPaperSizeInfo, getPaperSizeInfoAll, getPrinters, print,} from "../dist";
+import {getDefaultPrinter, getPaperSizeInfo, getPaperSizeInfoAll, getPrinters, print} from "../dist";
 import {join} from "node:path";
 import {Chromaticity, MediaSizeName, MediaTray, OrientationRequested, Scaling, Sides, Subset} from "../dist/types";
 

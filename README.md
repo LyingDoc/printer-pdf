@@ -243,10 +243,10 @@ const {
 
 ### <a id="paperSizeType"></a>PaperSizeType
 
-| 参数名       | 类型     | 描述   |
-|-----------|--------|------|
-| height    | number | 纸张高度 |
-| hind      | number | 纸张ID |
-| paperName | string | 纸张名称 |
-| rawKind   | number | 原始类型 |
-| width     | number | 纸张宽度 |
+| 参数名       | 类型     | 描述     |
+|-----------|--------|--------|
+| height    | number | 纸张高度   |
+| kind      | number | 纸张ID   |
+| paperName | string | 纸张名称   |
+| rawKind   | number | 原始类型ID |
+| width     | number | 纸张宽度   |

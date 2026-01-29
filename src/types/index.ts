@@ -18,7 +18,7 @@ export interface PaperSizesInfoType {
 
 export interface PaperSizeType {
     height: number;
-    hind: number;
+    kind: number;
     paperName: string;
     rawKind: number;
     width: number;
