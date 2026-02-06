@@ -1,19 +1,24 @@
-const path = require("path");
-const CopyPlugin = require("copy-webpack-plugin");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
-const nodeExternals = require("webpack-node-externals");
+import * as webpack from "webpack";
+import nodeExternals from "webpack-node-externals";
+import * as path from "node:path";
+import CopyPlugin from "copy-webpack-plugin";
 
-module.exports = {
+const config: webpack.Configuration = {
     mode: "production",
     entry: "./src/index.ts",
     devtool: "inline-source-map",
-    externals: [nodeExternals({
-        allowlist: [/electron-util/]
-    })],
+    externals: [
+        nodeExternals({
+            allowlist: [/electron-util/],
+        }),
+    ],
     output: {
-        path: path.resolve(__dirname, "dist"),
+        clean: true,
+        path: path.resolve(__dirname, "./dist"),
         filename: "index.js",
-        libraryTarget: "umd",
+        library: {
+            type: "umd",
+        },
     },
     module: {
         rules: [
@@ -27,7 +32,6 @@ module.exports = {
         extensions: [".tsx", ".ts", ".js"],
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new CopyPlugin({
             patterns: [
                 {to: "./types", from: "./src/types/index.ts"},
@@ -44,3 +48,4 @@ module.exports = {
         __dirname: false,
     },
 };
+export default config;
