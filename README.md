@@ -16,11 +16,9 @@
 轻量级跨平台 TypeScript 模块，可**轻松地从 Node.js 代码调用获取打印机相关信息**。
 
 > [!NOTE]
->
 > - 如果系统中未获取到所需的 Java 版本，则**自动安装**
 > - 系统**是异步执行**，所有方法均返回 Promise 对象。
 > - **macOS、Linux** 平台(运行原理非Windows平台，按照Unix平台执行),必须安装[
-
     `cpus`模块](https://openprinting.github.io/cups/index.html),否则会报错
 
 - 兼容 **JDK 和 JRE 8（默认JRE 8） 到 21** 版本
