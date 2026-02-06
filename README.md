@@ -37,7 +37,7 @@ npm install printer-pdf --save   #npm安装依赖
 yarn add printer-pdf            #yarn安装依赖
 ```
 
-## Usage [Example](https://github.com/LyingDoc/pdf-printer/blob/master/test/index.ts)
+## Usage [Example](https://github.com/LyingDoc/printer-pdf/blob/master/test/index.ts)
 
 - TypeScript 用法
 
