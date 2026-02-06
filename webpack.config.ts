@@ -5,7 +5,11 @@ import CopyPlugin from "copy-webpack-plugin";
 
 const config: webpack.Configuration = {
     mode: "production",
-    entry: "./src/index.ts",
+    entry: {
+        index: "./src/index.ts",
+        // 这会生成 dist/index.js
+        "types/index": "./src/types/index.ts"
+    },
     devtool: "inline-source-map",
     externals: [
         nodeExternals({
@@ -15,7 +19,7 @@ const config: webpack.Configuration = {
     output: {
         clean: true,
         path: path.resolve(__dirname, "./dist"),
-        filename: "index.js",
+        filename: "[name].js",
         library: {
             type: "umd",
         },
@@ -48,4 +52,4 @@ const config: webpack.Configuration = {
         __dirname: false,
     },
 };
-export default config;
+module.exports = config;
