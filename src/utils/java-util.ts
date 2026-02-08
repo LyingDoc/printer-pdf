@@ -22,7 +22,7 @@ const Parameter = `${fixPath}`;
  * 核心：封装手动 Promise 逻辑
  * 解决 TS 顶层 await 限制
  */
-async function initJava(): Promise<any> {
+async function initJava(): Promise<JavaCaller> {
     let instance;
     // 手动包装 Promise 以适配 async/await
     let homePath = await new Promise<string>((resolve, reject) => {
@@ -54,7 +54,7 @@ async function initJava(): Promise<any> {
     return instance;
 }
 
-export const run = async (printer: Options): Promise<string | "{ }"> => {
+export const run = async (printer: Options): Promise<string | "{}"> => {
     const args: string[] = [];
     args.push(printer.arg);
     const printerName = printer.printerName;
@@ -74,5 +74,5 @@ export const printRun = async (
     const base64Str = Buffer.from(JSON.stringify(print).trim()).toString(
         "base64",
     );
-    const {status, stdout, stderr} = await java.run([printer.arg, base64Str]);
+    const {status, stdout, stderr} = await java.run([printer.arg, base64Str], {windowsHide: false});
 };
