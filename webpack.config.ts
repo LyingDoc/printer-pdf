@@ -14,7 +14,7 @@ const config: webpack.Configuration = {
     externals: [
         nodeExternals({
             allowlist: [/electron-util/],
-        }),
+        }) as any,
     ],
     output: {
         clean: true,

@@ -1,6 +1,6 @@
 {
   "name": "printer-pdf",
-  "version": "5.2.4",
+  "version": "5.2.5",
   "description": "A simple and powerful printing library for node and elctron environments.",
   "license": "MIT",
   "repository": {
@@ -20,7 +20,7 @@
     "lint-build": "npm run lint && npm run build"
   },
   "devDependencies": {
-    "@types/node": "^25.1.0",
+    "@types/node": "^25.2.3",
     "@types/webpack": "^5.28.5",
     "@types/webpack-node-externals": "^3.0.4",
     "copy-webpack-plugin": "^13.0.1",
@@ -30,7 +30,7 @@
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "webpack": "^5.104.1",
+    "webpack": "^5.105.2",
     "webpack-cli": "^6.0.1",
     "webpack-node-externals": "^3.0.0"
   },
