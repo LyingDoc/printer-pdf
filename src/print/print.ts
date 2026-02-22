@@ -7,10 +7,7 @@ export default async function print(printer: PrintOptions): Promise<void> {
     const pdf = printer.pdf;
     if (!pdf) throw "No PDF specified";
     if (!fs.existsSync(pdf)) throw "No such file";
-    await printRun(
-        {
+    await printRun({
         arg: PrinterActions.PRINT,
-        },
-        printer,
-    );
+    }, printer,);
 }
