@@ -164,7 +164,7 @@ export interface PrintOptions {
   pdf: string; // 文件路径
   pages?: string; // 打印页面范围
   subset?: Subset; // 子集
-  orientation?: OrientationRequested;
+  orientation?: OrientationRequested; //打印方向
   scale?: Scaling; // 缩放
   monochrome?: Chromaticity; // 色彩打印
   side?: Sides; //双面打印

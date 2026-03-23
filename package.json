@@ -1,6 +1,6 @@
 {
   "name": "printer-pdf",
-  "version": "5.2.7",
+  "version": "5.2.8",
   "description": "A simple and powerful printing library for node and elctron environments.",
   "license": "MIT",
   "repository": {
@@ -16,27 +16,28 @@
   "scripts": {
     "test": "esno test/index.ts",
     "lint": "prettier --write \"**/*.{js,ts,json,md,yml}\"",
-    "build": "webpack --config webpack.config.ts",
+    "build": "webpack --config webpack.config.mts",
     "lint-build": "npm run lint && npm run build"
   },
   "devDependencies": {
-    "@types/node": "^25.2.3",
+    "@types/node": "^25.5.0",
     "@types/webpack": "^5.28.5",
     "@types/webpack-node-externals": "^3.0.4",
-    "copy-webpack-plugin": "^13.0.1",
+    "copy-webpack-plugin": "^14.0.0",
     "electron-util": "^1.0.0",
     "esno": "^4.8.0",
     "prettier": "3.8.1",
+    "terser-webpack-plugin": "^5.4.0",
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "webpack": "^5.105.2",
-    "webpack-cli": "^6.0.1",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2",
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
     "find-java-home": "^2.0.0",
-    "java-caller": "^4.4.0"
+    "java-caller": "^4.4.1"
   },
   "keywords": [
     "printer-pdf",

@@ -1,9 +1,14 @@
-import * as webpack from "webpack";
+import type {Configuration} from 'webpack';
 import nodeExternals from "webpack-node-externals";
 import * as path from "node:path";
 import CopyPlugin from "copy-webpack-plugin";
+import TerserPlugin from "terser-webpack-plugin";
+import {fileURLToPath} from "node:url";
 
-const config: webpack.Configuration = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const config: Configuration = {
     mode: "production",
     entry: {
         index: "./src/index.ts",
@@ -16,6 +21,24 @@ const config: webpack.Configuration = {
             allowlist: [/electron-util/],
         }) as any,
     ],
+    optimization: {
+        minimize: true,   // 这里改回 true
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    compress: false,      // 不压缩逻辑
+                    mangle: false,        // 不混淆变量名
+                    output: {
+                        beautify: true,   // ✅ 美化输出
+                        indent_level: 2,  // 缩进 2 空格
+                        comments: true,   // 保留注释
+                    },
+                },
+            }),
+        ],
+        moduleIds: 'named',
+        chunkIds: 'named',
+    },
     output: {
         clean: true,
         path: path.resolve(__dirname, "./dist"),
@@ -52,4 +75,4 @@ const config: webpack.Configuration = {
         __dirname: false,
     },
 };
-module.exports = config;
+export default config;

@@ -30,13 +30,13 @@ rest();
     printer: "",
     pdf: join(__dirname, "mlmdflr.pdf"),
     subset: Subset.ODD,
-      orientation: OrientationRequested.PORTRAIT,
+    orientation: OrientationRequested.PORTRAIT,
     scale: Scaling.SCALE_TO_FIT,
     monochrome: Chromaticity.MONOCHROME,
-      side: Sides.TWO_SIDED_SHORT_EDGE,
+    side: Sides.TWO_SIDED_SHORT_EDGE,
     bin: MediaTray.BOTTOM,
     paperSize: MediaSizeName.ISO_A4,
-      printDialog: false,
-      copies: 1,
+    printDialog: false,
+    copies: 1,
   });
 })();
