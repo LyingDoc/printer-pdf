@@ -25,7 +25,6 @@ export const getPaperSizeInfo = async (
  * @returns all paperSize
  */
 export const getPaperSizeInfoAll = async (
-    options: Omit<paperSizeInfoOptions, "printer"> = {},
 ): Promise<PaperSizesInfoType[]> => {
   try {
     let result = await run({

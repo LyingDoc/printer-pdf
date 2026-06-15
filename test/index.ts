@@ -14,7 +14,7 @@ rest();
   let DefaultPrinterPaperSizeInfo = await getPaperSizeInfo();
   console.log("默认打印机:", JSON.stringify(DefaultPrinterPaperSizeInfo));
   // 获取指定打印机支持的纸张大小
-  let PrinterPaperSizeInfo = await getPaperSizeInfo({printer: ""});
+    let PrinterPaperSizeInfo = await getPaperSizeInfo({printer: ""});
   console.log("默认打印机纸张:", JSON.stringify(PrinterPaperSizeInfo));
 
   let PrinterPaperSizeInfos = await getPaperSizeInfoAll();

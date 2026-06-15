@@ -26,6 +26,7 @@
       "node"
     ],
     "outDir": "dist",
+    "rootDir": "src",
     "declaration": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
